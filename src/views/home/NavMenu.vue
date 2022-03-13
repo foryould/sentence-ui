@@ -1,6 +1,6 @@
 <template>
   <div class="nav-menu">
-    <el-menu class="el-menu-vertical-demo">
+    <el-menu class="el-menu-vertical-demo" router :default-active="activeIndex">
       <el-menu-item
         v-for="item in menuItems"
         :key="item.id"
@@ -13,19 +13,21 @@
   </div>
 </template>
 <script>
-import { Menu, MenuItem } from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
-
 export default {
   name: 'NavMenu',
-  components: { ElMenu: Menu, ElMenuItem: MenuItem },
+  components: {},
   data() {
     return {
       menuItems: [
-        { id: 1, name: '诗词', index: '1', icon: '&#xeb8e;' },
-        { id: 2, name: '朝代', index: '2', icon: '&#xe6bc;' },
+        { id: 1, name: '诗词', index: '/', icon: '&#xeb8e;' },
+        { id: 2, name: '朝代', index: '/dynasty', icon: '&#xe6bc;' },
       ],
     }
+  },
+  computed: {
+    activeIndex() {
+      return this.$route.path
+    },
   },
 }
 </script>
