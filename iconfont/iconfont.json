@@ -1,0 +1,23 @@
+{
+  "id": "3239354",
+  "name": "interview",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "17358120",
+      "name": "朝代",
+      "font_class": "zhaodai",
+      "unicode": "e6bc",
+      "unicode_decimal": 59068
+    },
+    {
+      "icon_id": "23953501",
+      "name": "古诗词",
+      "font_class": "gushici",
+      "unicode": "eb8e",
+      "unicode_decimal": 60302
+    }
+  ]
+}
